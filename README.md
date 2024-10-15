@@ -5,22 +5,29 @@ A super lightweight and flexible field validation utility for JavaScript/TypeScr
 
 # 🎁 **Features**
 
-🔍 Simple Validation: Quickly check if required fields are present and non-empty.
-⚡️ Lightweight: No dependencies, blazing-fast execution.
-🔧 Flexible: Easily extendable and customizable for your specific needs.
+🔍 **Simple Validation:** 
+Quickly check if required fields are present and non-empty.
+⚡️ **Lightweight:** 
+No dependencies, blazing-fast execution.
+🔧 **Flexible:** 
+Easily extendable and customizable for your specific needs.
 
 
 # 📦 **Installation**
 
 Get started by installing the valideasy package:
+```
 npm install valideasy
+```
 Or if you're using Yarn:
+```
 yarn add valideasy
+```
 
 
 # 🚀 **Quick Start**
 
-It’s as easy as 1-2-3! Import the valideasy function and validate your data in no time.
+It’s as easy as 1-2-3! Import the **valideasy** function and validate your data in no time.
 
 ```
 import valideasy from 'validate-fields';
@@ -43,18 +50,26 @@ if (errorMessage) {
 # **How It Works**
 
 🧩 The validateFields function checks if the requiredFields exist in the requestBody.
+
 ⚠️ If a field is missing or an empty string, it returns an error message.
+
 ✅ If all fields are present and valid, it returns null.
 
 
 # 📜 **API Reference**
 
 valideasy(body, fields)
-📝 Parameters
+
+📝 **Parameters**
+
 body (Object) - The object to validate (e.g., request body or form data).
+
 fields (Array<String>) - An array of strings specifying the required fields.
-🔄 Returns
+
+🔄 **Returns**
+
 String - An error message indicating the first missing field.
+
 null - If all required fields are present and valid.
 
 
