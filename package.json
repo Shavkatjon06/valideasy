@@ -28,10 +28,12 @@
   "bugs": {
     "url": "https://github.com/Shavkatjon06/valideasy/issues"
   },
-  "peerDependencies": {
-    "valideasy": "^1.0.1"
-  },
   "devDependencies": {
     "typescript": "^5.6.3"
-  }
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ]
 }
