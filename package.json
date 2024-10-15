@@ -11,6 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "valideasy": "^1.0.0"
+    "valideasy": "^1.0.1"
   }
 }
