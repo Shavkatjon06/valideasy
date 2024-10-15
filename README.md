@@ -30,7 +30,7 @@ Easily extendable and customizable for your specific needs.
 It’s as easy as 1-2-3! Import the **valideasy** function and validate your data in no time.
 
 ```
-import valideasy from 'validate-fields';
+import valideasy from 'valideasy';
 
 const requestBody = {
     name: 'John Doe',
@@ -53,7 +53,7 @@ Use the **valideasy** function to validate incoming request data in an Express.j
 
 ```
 import express from 'express';
-import validateFields from 'validate-fields';
+import valideasy from 'valideasy';
 
 const app = express();
 app.use(express.json());
@@ -61,7 +61,7 @@ app.use(express.json());
 app.post('/register', (req, res) => {
     const requiredFields = ['name', 'email', 'password'];
     // Validate the request body
-    const errorMessage = validateFields(req.body, requiredFields);
+    const errorMessage = valideasy(req.body, requiredFields);
     if (errorMessage) {
         // If validation fails, send a 400 response with the error message
         return res.status(400).json({ error: errorMessage });
@@ -74,7 +74,7 @@ app.post('/register', (req, res) => {
 
 # **How It Works**
 
-🧩 The validateFields function checks if the requiredFields exist in the requestBody.
+🧩 The **valideasy** function checks if the requiredFields exist in the requestBody.
 
 ⚠️ If a field is missing or an empty string, it returns an error message.
 
