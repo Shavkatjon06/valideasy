@@ -1,26 +1,37 @@
 {
   "name": "valideasy",
   "version": "1.0.7",
-  "description": "",
+  "description": "A super lightweight and flexible field validation utility for JavaScript/TypeScript. Perfect for validating request bodies, form submissions, or any object with required fields.",
   "type": "module",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "keywords": [
     "validation",
     "validate",
     "field-validation",
     "form-validation",
-    "request-body"
+    "request-body",
+    "lightweight",
+    "typescript",
+    "javascript"
   ],
   "author": "Shavkatjon Juraev",
   "license": "MIT",
-  "dependencies": {
-    "valideasy": "^1.0.1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Shavkatjon06/valideasy.git"
+  },
+  "homepage": "https://github.com/Shavkatjon06/valideasy#readme",
+  "bugs": {
+    "url": "https://github.com/Shavkatjon06/valideasy/issues"
+  },
+  "peerDependencies": {
+    "valideasy": "^1.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3"
   }
 }

@@ -1,4 +1,6 @@
-const valideasy = (body = {}, fields = []) => {
+type ValidationResult = string | null;
+
+const valideasy = (body: Record<string, any> = {}, fields: string[] = []): ValidationResult => {
     if (typeof body !== 'object' || body === null) {
         throw new Error("The first argument must be an object.");
     }

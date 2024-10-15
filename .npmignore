@@ -1,2 +1,27 @@
-test.js
-.gitignore
+# Ignore source files and other development files
+src/
+*.ts
+
+# Ignore configuration files
+tsconfig.json
+.eslintignore
+.eslintrc
+.prettierrc
+.vscode/
+*.config.js
+
+# Ignore test files
+tests/
+*.spec.js
+*.test.js
+*.spec.ts
+*.test.ts
+
+# Ignore build and IDE related files
+node_modules/
+dist/
+coverage/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
