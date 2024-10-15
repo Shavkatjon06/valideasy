@@ -1,16 +1,6 @@
-# 🚀 **valideasy**
+# **Valideasy**
 
 A super lightweight and flexible field validation utility for JavaScript/TypeScript. Perfect for validating request bodies, form submissions, or any object with required fields. Say goodbye to missing fields and hello to cleaner code! 🌟
-
-
-# 🎁 **Features**
-
-🔍 **Simple Validation:** 
-Quickly check if required fields are present and non-empty.
-⚡️ **Lightweight:** 
-No dependencies, blazing-fast execution.
-🔧 **Flexible:** 
-Easily extendable and customizable for your specific needs.
 
 
 # 📦 **Installation**
@@ -18,11 +8,21 @@ Easily extendable and customizable for your specific needs.
 Get started by installing the valideasy package:
 ```
 npm install valideasy
-```
-Or if you're using Yarn:
-```
+# Or if you're using Yarn:
 yarn add valideasy
 ```
+
+
+# 🎁 **Features**
+
+🔍 **Simple Validation:** 
+Quickly check if required fields are present and non-empty.
+
+⚡️ **Lightweight:** 
+No dependencies, blazing-fast execution.
+
+🔧 **Flexible:** 
+Easily extendable and customizable for your specific needs.
 
 
 # 🚀 **Quick Start**
@@ -62,15 +62,15 @@ valideasy(body, fields)
 
 📝 **Parameters**
 
-body (Object) - The object to validate (e.g., request body or form data).
+**body (Object)** - The object to validate (e.g., request body or form data).
 
-fields (Array<String>) - An array of strings specifying the required fields.
+**fields (Array<String>)** - An array of strings specifying the required fields.
 
 🔄 **Returns**
 
-String - An error message indicating the first missing field.
+**String** - An error message indicating the first missing field.
 
-null - If all required fields are present and valid.
+**null** - If all required fields are present and valid.
 
 
 # 💬 **Contact**
