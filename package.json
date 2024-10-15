@@ -7,10 +7,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "validation",
+    "validate",
+    "field-validation",
+    "form-validation",
+    "request-body"
+  ],
+  "author": "Shavkatjon Juraev",
+  "license": "MIT",
   "dependencies": {
     "valideasy": "^1.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shavkatjon06/valideasy.git"
   }
 }
