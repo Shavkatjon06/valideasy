@@ -8,7 +8,7 @@ A super lightweight and flexible field validation utility for JavaScript/TypeScr
 Get started by installing the valideasy package:
 ```
 npm install valideasy
-# Or if you're using Yarn:
+# Or
 yarn add valideasy
 ```
 
@@ -46,6 +46,31 @@ if (errorMessage) {
     console.log('✅ All fields are valid!');
 }
 ```
+
+
+# 📋 **Express.js Request Body Validation Example**
+Use the **valideasy** function to validate incoming request data in an Express.js application. This example shows how to validate the **req.body** for required fields in an API endpoint.
+
+```
+import express from 'express';
+import validateFields from 'validate-fields';
+
+const app = express();
+app.use(express.json());
+
+app.post('/register', (req, res) => {
+    const requiredFields = ['name', 'email', 'password'];
+    // Validate the request body
+    const errorMessage = validateFields(req.body, requiredFields);
+    if (errorMessage) {
+        // If validation fails, send a 400 response with the error message
+        return res.status(400).json({ error: errorMessage });
+    }
+    // If validation passes, proceed with the registration process
+    res.status(200).json({ message: 'Registration successful!' });
+})
+```
+
 
 # **How It Works**
 
