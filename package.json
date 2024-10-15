@@ -1,6 +1,6 @@
 {
   "name": "valideasy",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A super lightweight and flexible field validation utility for JavaScript/TypeScript. Perfect for validating request bodies, form submissions, or any object with required fields.",
   "type": "module",
   "main": "dist/index.js",
